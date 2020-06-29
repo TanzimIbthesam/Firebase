@@ -1,0 +1,17 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "build": "postcss build style.css -o css/output.css",
+  "watch": "postcss build style.css -o css/output.css --watch"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}

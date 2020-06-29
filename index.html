@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    
+</head>
+<body class="body">
+ <div class="first">
+<div class="list">
+     <h1 class="headingone mb-2">Search all restaurants here </h1>
+      
+          <form action="" id="cafe-form">
+            <div class="sm:flex">
+              
+              <div class="mb-2">
+                    <input type="text" name="name" class="restaurantinput placeholder-black" placeholder="Add Restaurant">
+              </div>
+              <div class="mb-2">
+                <input type="text" name="city" class="cityinput placeholder-black" placeholder="Add City">
+              </div>
+              <div class="mb-2 sm:flex">
+                    <button
+                      class="button">Send</button>
+                    
+              </div>
+              </form>
+              
+               
+            </div>
+       
+         
+          
+      
+     
+</div>
+     <div class="xl:w-2/5 flex flex-col bg-white w-11/12 mt-4 xl:mt-0">
+      <ul class="restaurantlist"></ul>
+      </ul>
+
+     </div>
+<div class="new">
+
+</div>
+     
+ 
+ 
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+  
+  <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBbuUcd7HFYWGb7TB1tFcg06wSGMSI76eo",
+        authDomain: "firestore-ad32e.firebaseapp.com",
+        databaseURL: "https://firestore-ad32e.firebaseio.com",
+        projectId: "firestore-ad32e",
+        storageBucket: "firestore-ad32e.appspot.com",
+        messagingSenderId: "834604623030",
+        appId: "1:834604623030:web:f25a0b83ff393ef0ab3217",
+        measurementId: "G-KP1B5JDTDB"
+    };
+        // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore()
+console.log(db);
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

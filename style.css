@@ -1,0 +1,72 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+.body{
+    @apply m-0 p-0 box-border bg-orange-200
+}
+.restaurantlist li{
+    @apply text-black text-xl  py-4 px-8 bg-white rounded-md 
+}
+.cityinput{
+    @apply border bg-gray-100 rounded-md px-4 py-1 text-black
+}
+.restaurantinput{
+    @apply border bg-gray-100 rounded-md px-4 py-1 text-black 
+}
+
+.list{
+    @apply text-white  py-6 mt-32  px-16 w-11/12 border-2 border-gray-700
+}
+.headingone{
+    @apply text-black text-center text-xl font-semibold ;
+}
+  .first {
+      @apply flex flex-col justify-center items-center mt-12
+  }
+ 
+   .button {
+       @apply px-4 py-1 bg-white text-gray-500 border border-gray-500 rounded-lg text-base font-bold 
+   }
+     .buttontwo {
+         @apply px-6 py-1 bg-white text-gray-500 border border-yellow-500 rounded-lg text-base font-bold ml-4
+     }
+@screen xl {
+    .first {
+        @apply  flex flex-col justify-center items-center w-11/12 mt-6
+    }
+     .restaurantlist li{
+         @apply text-black text-xl  py-4 px-8 bg-white rounded-md
+     }
+     .paragraph{
+         
+     }
+    .list{
+        @apply w-2/5 bg-white py-3 mt-32 border rounded-tr-full 
+    }
+    .headingone{
+        @apply text-black text-center text-2xl font-semibold;
+    }
+    .new{
+        @apply rounded-full h-16 w-16 flex items-center justify-center
+    }
+    .cityinput {
+        @apply bg-gray-300 text-black px-4 py-1 border rounded-md  font-light ml-2
+    }
+
+    .restaurantinput {
+        @apply bg-gray-300 text-black px-4 py-1 border rounded-md   font-light 
+    }
+    .button{
+        @apply px-6 py-1 bg-white text-gray-500 border border-gray-500 rounded-lg text-base font-bold ml-4
+    }
+    .buttontwo{
+        @apply px-6 py-1 bg-white text-gray-500 border border-yellow-500 rounded-lg text-base font-bold ml-4
+    }
+    
+    };
+    
+    
+    
+
